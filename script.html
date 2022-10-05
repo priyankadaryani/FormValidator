@@ -1,16 +1,50 @@
+<!-- ! press shift+option+down arrow to paste the whole copied segment below it -->
+<!-- ! # for ID and . for class -->
+<!-- ! select some text, and all other instances of the same thing will get highlighted too, 
+     ! press Cmd+D to select the next instance and so on -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validator</title>
 </head>
+
 <body>
     <div class="container">
         <!-- *** no action in form because we arent sending it to any file? -->
         <!-- *** the idea is that we will use IDs for JS and classes for CSS -->
-        <form id="form" class="form"></form> 
+        <form id="form" class="form">
+            <h2>Register with us!</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="enter username">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="enter email">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="enter password">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirm password</label>
+                <input type="text" id="password2" placeholder="enter password again">
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+
+
     </div>
 </body>
+
 </html>
